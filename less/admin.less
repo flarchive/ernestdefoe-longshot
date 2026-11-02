@@ -1,0 +1,138 @@
+.Longshot-adminNote {
+  background: var(--control-bg);
+  border-radius: var(--border-radius);
+  padding: 10px 14px;
+}
+
+.Longshot-adminHeading {
+  margin-top: 30px;
+}
+
+.Longshot-manager-bar,
+.Longshot-manager-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+
+  .FormControl {
+    width: auto;
+    min-width: 160px;
+  }
+}
+
+.Longshot-adminTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+
+  th,
+  td {
+    padding: 6px;
+    border-bottom: 1px solid var(--control-bg);
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+.Longshot-adminActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.Longshot-leagues {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+
+.Longshot-editMarket {
+  border: 1px solid var(--control-bg);
+  border-radius: var(--border-radius);
+  padding: 10px 14px;
+  margin: 0 0 12px;
+
+  legend {
+    font-weight: 600;
+    padding: 0 6px;
+  }
+}
+
+.Longshot-form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.Longshot-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 4px;
+  border: 1px solid var(--control-bg);
+}
+
+.Longshot-provider {
+  border: 1px solid var(--control-bg);
+  border-radius: var(--border-radius);
+  padding: 12px 16px;
+  margin: 12px 0;
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .Form-group,
+    .Checkbox {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  &.is-off {
+    opacity: 0.7;
+  }
+}
+
+.Longshot-providerState {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--control-bg);
+
+  &.is-ready {
+    background: var(--alert-success-bg);
+    color: var(--alert-success-color);
+  }
+
+  &.is-paused {
+    background: var(--alert-error-bg);
+    color: var(--alert-error-color);
+  }
+}
+
+.Longshot-providerError {
+  color: var(--validation-error-color);
+  font-size: 13px;
+}
+
+.Longshot-ok {
+  color: var(--control-success-color);
+  font-weight: 600;
+}
+
+.Longshot-teams select {
+  max-width: 320px;
+}
+
+.Longshot-teams label > span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
